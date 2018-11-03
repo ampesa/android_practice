@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ViewsActivity</string>
+    <string name="button_red_background">Fondo Rojo</string>
+    <string name="button_black_font">Letras Negras</string>
+    <string name="checkbox_show_text">Mostrar</string>
+    <string name="textview_hidden_message">Sshhh! Mensaje Secreto</string>
+    <string name="textview_ask_long_click">Haz aquí un clic corto o largo</string>
+    <string name="textview_default_rating">[0/5]</string>
+    <string name="show_short">Has hecho un click corto</string>
+    <string name="show_long">Has hecho un click largo</string>
+    <string name="rate_true">Votar</string>
+    <string name="rate_false">No votar</string>
+    <string name="seek_bar_note">Arrastra para ver el progreso</string>
+</resources>

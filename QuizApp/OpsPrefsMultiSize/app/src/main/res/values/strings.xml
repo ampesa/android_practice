@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Práctica 2.5</string>
+    <string name="tv_main">Mi aplicación</string>
+    <string name="et_email_hint">Email</string>
+    <string name="et_pass_hint">Password</string>
+    <string name="bt_email_login">Iniciar sesión con mi email</string>
+    <string name="bt_facebook_login">Iniciar sesion con Facebook</string>
+    <string name="bt_google_login">Iniciar sesión con Google</string>
+
+</resources>

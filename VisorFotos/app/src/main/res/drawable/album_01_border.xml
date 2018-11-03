@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Establecemos un color de fondo con solid
+    Añadimos un stroke del ancho que queremos para el marco gris de los álbumes (10dp)
+    con el color PrimaryDark
+    Le ponemos un padding de 10 a los cuatro lados
+    Solución obtenida en StackOverflow.
+    Finalmente utilizamos un padding para evitar que las imágenes alcancen el borde y
+    permanezcan dentro del marco gris-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid
+        android:color="@color/colorAccent" />
+
+    <stroke
+        android:width="10dp"
+        android:color="@color/colorPrimaryDark" />
+
+    <padding
+        android:left="10dp"
+        android:top="10dp"
+        android:right="10dp"
+        android:bottom="10dp" />
+</shape>

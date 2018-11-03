@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BusinessCardApp</string>
+    <string name="default_name">Default name</string>
+    <string name="default_position">Default position</string>
+    <string name="save_button">Save</string>
+    <string name="edit_button">Edit</string>
+    <string name="share_button">Share</string>
+    <string name="no_app_available">There is no App available for this functionality</string>
+    <string name="no_camera_app">There is no Camera App</string>
+    <string name="request_user_name">Please input your name in the box below</string>
+    <string name="request_position">Please input your job position in the box below</string>
+</resources>

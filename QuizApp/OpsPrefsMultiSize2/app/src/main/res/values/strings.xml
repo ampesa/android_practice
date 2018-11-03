@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Práctica 2.5</string>
+    <string name="activity_user_data_label">Ver Datos</string>
+    <string name="activity_user_settings_label">Ajustes</string>
+    <string name="tv_main">Mi aplicación</string>
+    <string name="et_email_hint">Email</string>
+    <string name="et_pass_hint">Password</string>
+    <string name="bt_email_login">Iniciar sesión con mi email</string>
+    <string name="bt_facebook_login">Iniciar sesion con Facebook</string>
+    <string name="bt_google_login">Iniciar sesión con Google</string>
+    <string name="menu_ver_datos">Ver Datos</string>
+    <string name="menu_ajustes">Ajustes</string>
+    <string name="menu_ayuda">Ayuda</string>
+    <string name="pc_datos">Uso de datos</string>
+    <string name="pc_operador">Ajutes de operador</string>
+    <string name="pref_delete_old_title">Eliminar Mensajes Antiguos</string>
+    <string name="pref_delete_old_summary">Eliminar los mensajes una vez se ha alcanzado el límite de mensajes</string>
+    <string name="pref_char_limit_title">Límite de caracteres</string>
+    <string name="pref_char_limit_summary">Limita los mensajes a una cantidad determinada de caracteres</string>
+    <string name="pref_mobile_data_title">Usar datos móviles</string>
+    <string name="pref_mobile_data_summary">Se aplicarán tarifas del operador</string>
+    <string name="pref_operator_title">Operador</string>
+    <string name="pref_operator_summary">Selecciona el operador de nuestra lista de colaboradores</string>
+    <string name="pref_operator_dialog_title">Selecciona un operador</string>
+    <string name="tv_userdata_delete_old">Eliminar mensajes antiguos: </string>
+    <string name="tv_userdata_char_limit">Límite de caracteres: </string>
+    <string name="tv_userdata_mobile_data">Usar datos móviles: </string>
+    <string name="tv_userdata_operator">Operador: </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

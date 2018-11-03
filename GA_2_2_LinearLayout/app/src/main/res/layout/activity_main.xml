@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Al LinearLayout principal le damos orientación vertical para poner
+los otros dos LinearLayout (o groupview) uno encima del otro
+además le damos color de fondo negro-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <!--Al primer LinearLayout le damos orientación horizontal y el
+    ancho del padre y una altura de 100dp. En este caso el color de
+    fondo es el azul que queremos utilizar para el borde. Además, le
+    damos un margin de 10dp para que se genere el borde negro
+    exterior-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#1affff"
+        android:layout_margin="10dp">
+
+            <!--A cada TextView le damos un id diferente, la anchura y altura
+            del padre (LinearLayout) y les damos a todos un peso (weight) de 1
+            para que ocupen el mismo ancho. Cada uno tiene un color de fuente y
+            de fondo distinto. Además hemos centrado el texto horizontalmente
+            y le hemos dado margenes de 5dp para que aparezca el color de fondo
+            del Layout contenedor como borde. Al último TextView le añadimos el
+            margin derecho para completar el borde-->
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_red_dark"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:text="rojo"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:background="@android:color/holo_green_dark"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:text="verde"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#ffff66"
+                android:background="#0000b4"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:text="azul"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:background="#ffff66"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:text="amarillo"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+    <!--El segundo LinearLayout tiene orientacion vertical y el color
+    de fondo que aparecerá como borde superior e inferior de cada
+    TextView. Además le ponemos un margin horizontal de 5dp para que
+    aparezca el fondo negro del Layout principal a ambos lados-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#996600"
+        android:layout_marginHorizontal="5dp">
+
+            <!--Igual que loa anteriores, cada TextView tiene un peso de
+            1 para que se distribuyan uniformemente, con ancho y alto como
+            el del LinearLayout que los contiene. Todos tienen el mismo color
+            de fondo y de fuente. Hemos definido un tamaño de texto de 40dp
+            y un margen superior de 10dp para que aparezca el color de su
+            Layout como bordes superior e inferior. Al último TextView le
+            añadimos también el margen inferior para crear el último borde-->
+            <TextView
+                android:id="@+id/columna1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:gravity="center_vertical"
+                android:textSize="40dp"
+                android:layout_marginTop="10dp"
+                android:text="columna_uno" />
+
+            <TextView
+                android:id="@+id/columna2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:gravity="center_vertical"
+                android:textSize="40dp"
+                android:layout_marginTop="10dp"
+                android:text="columna_dos"/>
+
+            <TextView
+                android:id="@+id/columna3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:gravity="center_vertical"
+                android:textSize="40dp"
+                android:layout_marginTop="10dp"
+                android:text="columna_tres" />
+
+            <TextView
+                android:id="@+id/columna4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:gravity="center_vertical"
+                android:textSize="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="columna_cuatro" />
+    </LinearLayout>
+
+
+</LinearLayout>

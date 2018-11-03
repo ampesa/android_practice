@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VisorIconos</string>
+    <string name="album_01">Posicionamiento</string>
+    <string name="album_02">Android</string>
+    <string name="album_03">Google Play</string>
+    <string name="album_04">Camera</string>
+</resources>

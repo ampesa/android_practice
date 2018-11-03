@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <PreferenceCategory
+        android:title="Datos de usuario">
+
+        <EditTextPreference
+            android:key="pref_name"
+            android:title="@string/pref_name"
+            android:dialogTitle="@string/pref_name_dialog"
+            android:summary="@string/pref_name_dialog"/>
+
+        <EditTextPreference
+            android:key="pref_user_name"
+            android:title="@string/pref_user_name"
+            android:dialogTitle="@string/pref_user_name_dialog"
+            android:summary="@string/pref_user_name_dialog"/>
+
+        <EditTextPreference
+            android:key="pref_birth_date"
+            android:title="@string/pref_birth_date"
+            android:dialogTitle="@string/pref_birth_date_dialog"
+            android:summary="@string/pref_birtb_date_summary"/>
+
+        <!--Con sumary="%s" mostramos el valor seleccionado en la lista-->
+        <ListPreference
+            android:key="pref_gender"
+            android:title="@string/pref_gender"
+            android:dialogTitle="@string/pref_gender_dialog"
+            android:summary="%s"
+            android:entries="@array/GenderList"
+            android:entryValues="@array/GenderValues"
+            android:defaultValue="1" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

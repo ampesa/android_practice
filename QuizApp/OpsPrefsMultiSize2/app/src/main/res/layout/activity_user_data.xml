@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserData"
+    android:layout_marginVertical="50dp"
+    android:layout_marginHorizontal="20dp">
+
+    <TextView
+        android:id="@+id/tv_userdata_delete_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_userdata_delete_old"
+        style="@style/activity_user_data"/>
+
+    <TextView
+        android:id="@+id/tv_userdata_delete_old_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_userdata_delete_old"
+        style="@style/activity_user_data"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_userdata_char_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_userdata_char_limit"
+        android:layout_below="@id/tv_userdata_delete_old"
+        style="@style/activity_user_data"/>
+
+    <TextView
+        android:id="@+id/tv_userdata_char_limit_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_userdata_delete_old"
+        android:layout_toEndOf="@id/tv_userdata_char_limit"
+        style="@style/activity_user_data"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_userdata_mobile_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_userdata_mobile_data"
+        android:layout_below="@id/tv_userdata_char_limit"
+        style="@style/activity_user_data"/>
+
+    <TextView
+        android:id="@+id/tv_userdata_mobile_data_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_userdata_char_limit"
+        android:layout_toEndOf="@id/tv_userdata_mobile_data"
+        style="@style/activity_user_data"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_userdata_operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_userdata_operator"
+        android:layout_below="@id/tv_userdata_mobile_data"
+        style="@style/activity_user_data"/>
+
+    <TextView
+        android:id="@+id/tv_userdata_operator_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_userdata_mobile_data"
+        android:layout_toEndOf="@id/tv_userdata_operator"
+        style="@style/activity_user_data"
+        android:paddingStart="10dp"/>
+
+</RelativeLayout>

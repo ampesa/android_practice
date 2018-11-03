@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <PreferenceCategory
+        android:title="Ajustes de usuario">
+
+        <CheckBoxPreference
+            android:key="pref_sync"
+            android:title="@string/sync"
+            android:summary="@string/sync_sumary"
+            android:defaultValue="true"/>
+
+        <ListPreference
+            android:dependency="pref_sync"
+            android:key="pref_syncConnectionType"
+            android:title="@string/sync_ops"
+            android:dialogTitle="Título de la ventana de diálogo"
+            android:entries="@array/Listentries"
+            android:entryValues="@array/Listvalues"
+            android:defaultValue="2" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Ajustes de datos">
+
+        <CheckBoxPreference
+            android:key="pref_datos_boolean"
+            android:title="Uso de datos móviles"
+            android:summary="Desactiva si estás en el extranjero"
+            android:defaultValue="true"/>
+
+        <EditTextPreference
+            android:key="pref_operador"
+            android:title="Operador"
+            android:dialogTitle="Escribe el operador"
+            android:summary="Indícanos tu operador"/>
+
+        <RingtonePreference
+            android:key="pref_tone"
+            android:title="Tono de llamada deseado"
+            android:ringtoneType="notification"/>
+
+        <SwitchPreference
+            android:key="pref_silence"
+            android:title="Silenciar notificaciones"
+            android:summary="Desactiva para no molestar"
+            android:defaultValue="false"/>
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

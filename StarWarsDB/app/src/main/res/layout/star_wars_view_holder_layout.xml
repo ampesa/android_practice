@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Utilizamos un FrameLayout para contener el resto de elementos del RecyclerView.
+    Ocupará el tamaño del padre y le damos orientación vertical.
+    Para mejorar la estética le añadimos el fonodo contenido en el archivo card_border.
+    Con esto le damos un color de fondo, redondeamos los vértices para darle aspecto de carta
+    y se dibuja un pequeño borde exterior (Stroke)-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/card_border"
+    android:id="@+id/ll_outer_card">
+
+    <!--Organizamos los textos de descripción del personaje con un LinearLayout que distribuirá sus
+        objetos verticalmente. La posición de los objetos será centrada y abajo-->
+    <RelativeLayout
+        android:id="@+id/rl_inner_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:layout_weight="0.3">
+        <!--Representará la imagen del personaje. Su tamaño se ajustará al contenido
+        Ocupará una posición centrada horizontalmente y pegada a la parte superior
+        para darle un poco de "aire" le ponemos un margin de 10dp-->
+        <ImageView
+            android:id="@+id/iv_char_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"/>
+
+        <!--Cada texto tendrá un tamaño de 40sp y un margin de 5 dp para separarse del resto de textos-->
+        <TextView
+            android:id="@+id/tv_char_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_char_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="40sp" />
+<!--Estos TextView pasan a mostrarse en la actividad CharacterDetails
+        <TextView
+            android:id="@+id/tv_char_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_char_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_char_mass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_weight="0.7">
+
+        <ImageButton
+            android:id="@+id/ib_share"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_border"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share_icon01" />
+
+        <ImageButton
+            android:id="@+id/ib_edit_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_border"
+            android:scaleType="fitCenter"
+            android:src="@drawable/picture_edit_icon01" />
+
+    </RelativeLayout>
+
+</LinearLayout>

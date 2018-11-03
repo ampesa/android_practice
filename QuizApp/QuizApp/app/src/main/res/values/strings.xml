@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="new_game">New Game</string>
+    <string name="best_score">Best Score</string>
+    <string name="share_score">Share Best Score</string>
+    <string name="finish_quiz">Finish Quiz</string>
+    <string name="browser">Browser</string>
+    <string name="score_key">SCORE</string>
+</resources>

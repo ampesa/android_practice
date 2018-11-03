@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.33"
+    android:id="@+id/fl_list_entry"
+    android:layout_margin="5dp"
+    android:background="@drawable/card_border"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_sw_icon"
+        android:layout_gravity="center_horizontal|top"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/fl_profile"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_char_name"
+            android:text="name"
+            android:textSize="40sp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_char_gender"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_char_height"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_char_mass"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+

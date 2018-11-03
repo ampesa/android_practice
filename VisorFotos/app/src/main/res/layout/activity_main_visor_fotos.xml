@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Utilizamos un LinearLayout para englobar al resto.
+    Le ponemos orientación horizontal, para que los scroll se situen uno al lado del otro
+    Le asignamos un padding de 10dp para cumplir la especificación de envolver con un marco
+    blanco de ese ancho-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainVisorFotos"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:baselineAligned="false">
+
+
+    <!--Creamos 2 ScrollView, uno para los álbumes y otro para las fotos les damos a cada uno
+        un layoutweight de 0.50 para que ocupen la mitad de la pantalla cada uno-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv_album"
+        android:layout_weight="0.50">
+
+        <!--Dentro del ScrollView de los álbumes ponemos un RelativeLayout para contenerlos.
+            Asignamos un paddingRight de 5dp par el marco blanco que separa álbumes de fotos-->
+        <RelativeLayout
+            android:id="@+id/rl_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingRight="5dp">
+
+            <!--Utilizamos ImageButton para cada uno de los álbumes. Se ajustarán al ancho del padre
+                y a la altura del contenido. El primero se alineará a la izquierda y a la parte
+                superior del elemento padre. Utilizamos fitCenter para que las imagenes permanezcan
+                en el centro del elemento y se ajusten proporcionalmente si hay cambios de tamaño
+                de pantalla (podemos probar el efecto al pasar de Protrait a Landscape.
+                Además, como hemos utilizado vectores que transparentan el background, para pintar el
+                borde gris utilizamos archivos XML independientes que guardamos en la carpeta de
+                recursos drawable-->
+            <ImageButton
+                android:id="@+id/ib_album01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitCenter"
+                android:background="@drawable/album_01_border"
+                android:contentDescription="@string/album_01"
+                android:src="@drawable/map_icon12" />
+
+            <ImageButton
+                android:id="@+id/ib_album02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_album01"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitCenter"
+                android:background="@drawable/album_02_border"
+                android:contentDescription="@string/album_02"
+                android:src="@drawable/android_icon01" />
+
+            <ImageButton
+                android:id="@+id/ib_album03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_album02"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitCenter"
+                android:background="@drawable/album_03_border"
+                android:contentDescription="@string/album_03"
+                android:src="@drawable/play_icon01" />
+
+            <ImageButton
+                android:id="@+id/ib_album04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_album03"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitCenter"
+                android:background="@drawable/album_01_border"
+                android:contentDescription="@string/album_04"
+                android:src="@drawable/camera_icon01" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!--Al ScrollView de las fotos le asignamos un paddingLeft de 5dp para completar el marco blanco
+        de 10dp con el que separamos ambas vistas álbumes/fotos. Le asingamos también un weight de
+        0.50 para que ocupe el 50% de la pantalla restante. Esta proporción se mandendrá al cambiar
+        el tamaño de la pantalla-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:id="@+id/sv_fotos"
+        android:paddingLeft="5dp">
+
+        <!--Dentro del Scroll organizamos las fotos con un Grid de 2 columnas-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabla_fotos"
+            android:columnCount="2">
+
+            <!--Utilizamos un ImageView para cada foto/icono y le asignamos un ancho de 0dp, con un
+                layout_columnWeight de 1. Con esto conseguimos que el ancho de la columna se ajuste
+                al espacio disponible de manera equitativa entre ambas columnas (solución obtenida
+                en StackOverflow. Además utilizamos la misma estrategia de bordes que con los albumes
+                pues al tratarse de vectores, si utilizamos el background normal se pinta el fondo
+                completo y no solo el borde exterior.-->
+            <ImageView
+                android:id="@+id/map_icon01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon01"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon02"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon03"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon03"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon04"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon04"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon05"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon06"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon06"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon07"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon07"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon08"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon08"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon09"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon09"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon10"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon11"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon12"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon13"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+            <ImageView
+                android:id="@+id/map_icon14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_icon14"
+                android:background="@drawable/cell_border"
+                android:layout_columnWeight="1"/>
+
+
+        </GridLayout>
+
+    </ScrollView>
+
+</LinearLayout>

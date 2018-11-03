@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BasicPreferences2</string>
+    <string name="sync">Sincronización</string>
+    <string name="sync_sumary">Queremos que ese sincronice</string>
+    <string name="sync_ops">Opciones de Sincronización</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_user_setting"
+        android:title="@string/menu_user_settings">
+        <menu>
+            <item
+                android:id="@+id/menu_user_setting_edit"
+                android:title="@string/menu_user_settings_edit" />
+            <item
+                android:id="@+id/menu_user_setting_show"
+                android:title="@string/menu_user_settings_show" />
+        </menu>
+    </item>
+</menu>

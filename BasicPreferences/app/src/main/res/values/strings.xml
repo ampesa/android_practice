@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BasicPreferences</string>
+    <string name="save_pref">Save Preferences</string>
+    <string name="get_pref">Get Preferences</string>
+</resources>

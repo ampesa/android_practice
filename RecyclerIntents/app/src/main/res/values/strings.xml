@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerIntents</string>
+    <string name="hola">Hola</string>
+</resources>

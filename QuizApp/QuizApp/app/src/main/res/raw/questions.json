@@ -1,0 +1,587 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What's the name of the main protagonist in the 'Legend of Zelda' franchise?",
+      "correct_answer": "Link",
+      "incorrect_answers": [
+        "Mario",
+        "Zelda",
+        "Pit"
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Carcassonne is based on which French town?",
+      "correct_answer": "Carcassonne",
+      "incorrect_answers": [
+        "Paris",
+        "Marseille",
+        "Clermont-Ferrand"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What country is not a part of Scandinavia?",
+      "correct_answer": "Finland",
+      "incorrect_answers": [
+        "Norway",
+        "Sweden",
+        "Denmark"
+      ]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "During what war did the 'Cuban Missile Crisis' occur?",
+      "correct_answer": "Cold War",
+      "incorrect_answers": [
+        "World War I",
+        "World War II",
+        "Revolutionary War"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "boolean",
+      "difficulty": "easy",
+      "question": "The main character in the 'Half-Life' franchise is named Morgan Freeman.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the creator of the comic series 'The Walking Dead'?",
+      "correct_answer": "Robert Kirkman",
+      "incorrect_answers": [
+        "Stan Lee",
+        "Malcolm Wheeler-Nicholson",
+        "Robert Crumb"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which band released songs such as 'Electric Feel', 'Kids', and 'Time to Pretend'?",
+      "correct_answer": "MGMT",
+      "incorrect_answers": [
+        "Passion Pit",
+        "Phoenix",
+        "Franz Ferdinand"
+      ]
+    },
+    {
+      "category": "Science & Nature",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which of the following blood vessels carries deoxygenated blood?",
+      "correct_answer": "Pulmonary Artery",
+      "incorrect_answers": [
+        "Pulmonary Vein",
+        "Aorta",
+        "Coronary Artery"
+      ]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In what year was the last natural case of smallpox documented?",
+      "correct_answer": "1977",
+      "incorrect_answers": [
+        "1982",
+        "1980",
+        "1990"
+      ]
+    },
+    {
+      "category": "Animals",
+      "type": "boolean",
+      "difficulty": "medium",
+      "question": "'Kamea,' the Gilbertese Islander word for dog, is derived from the English phrase 'Come here!'",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What African country has Portuguese as its official language?",
+      "correct_answer": "Mozambique",
+      "incorrect_answers": [
+        "Botswana",
+        "Gabon",
+        "Togo"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "boolean",
+      "difficulty": "easy",
+      "question": "Nutella is produced by the German company Ferrero.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the assassin in the first 'Hellboy' movie?",
+      "correct_answer": "Karl Ruprecht Kroenen",
+      "incorrect_answers": [
+        "Klaus Werner von Krupt",
+        "Grigori Efimovich Rasputin",
+        "Ilsa Haupstein"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of these is NOT the name of an album released by American rapper Viper?",
+      "correct_answer": "The Life of Pablo",
+      "incorrect_answers": [
+        "Kill Urself My Man",
+        "You'll Cowards Don't Even Smoke Crack",
+        "Yo Wife Handcuffin' Me"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of these is NOT a song on The Beatles' 1968 self titled album, also known as the White album?",
+      "correct_answer": "Being For The Benefit Of Mr. Kite!",
+      "incorrect_answers": [
+        "Why Don't We Do It in the Road?",
+        "Everybody's Got Something to Hide Except Me and My Monkey",
+        "The Continuing Story of Bungalow Bill"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which artist released the 2012 single 'Harlem Shake', which was used in numerous YouTube videos in 2013?",
+      "correct_answer": "Baauer",
+      "incorrect_answers": [
+        "RL Grime",
+        "NGHTMRE",
+        "Flosstradamus"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the Italian word for 'tomato'?",
+      "correct_answer": "Pomodoro",
+      "incorrect_answers": [
+        "Aglio",
+        "Cipolla",
+        "Peperoncino"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the romanized Russian word for 'winter'?",
+      "correct_answer": "Zima",
+      "incorrect_answers": [
+        "Leto",
+        "Vesna",
+        "Osen'"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What was Rage Against the Machine's debut album?",
+      "correct_answer": "Rage Against the Machine",
+      "incorrect_answers": [
+        "Evil Empire",
+        "Bombtrack",
+        "The Battle Of Los Angeles"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The stop motion comedy show 'Robot Chicken' was created by which of the following?",
+      "correct_answer": "Seth Green",
+      "incorrect_answers": [
+        "Seth MacFarlane",
+        "Seth Rogen",
+        "Seth Rollins"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the show Stranger Things, what is Eleven's favorite breakfast food?",
+      "correct_answer": "Eggo Waffles",
+      "incorrect_answers": [
+        "Toast",
+        "Captain Crunch",
+        "Bacon and Eggs"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "In Undertale, having a 'Fun Value' set to 56-57 will play the 'Wrong Number Song Call'.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In Need For Speed: Most Wanted (2005), how many people are there to defeat on the blacklist?",
+      "correct_answer": "15",
+      "incorrect_answers": [
+        "5",
+        "10",
+        "20"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who was the main antagonist of Max Payne 3 (2012)?",
+      "correct_answer": "Victor Branco",
+      "incorrect_answers": [
+        "&Aacute;lvaro Neves",
+        "Armando Becker",
+        "Milo Rego"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In 'It's Always Sunny in Philadelphia' what was the name of Frank's wrestling persona?",
+      "correct_answer": "The Trash Man",
+      "incorrect_answers": [
+        "Bird of War",
+        "Day Man",
+        "The Maniac"
+      ]
+    },
+    {
+      "category": "Science: Computers",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the default theme that is installed with Windows XP?",
+      "correct_answer": "Luna",
+      "incorrect_answers": [
+        "Neptune",
+        "Whistler",
+        "Bliss"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What song plays in the ending credits of the anime 'Ergo Proxy'?",
+      "correct_answer": "Paranoid Android",
+      "incorrect_answers": [
+        "Sadistic Summer",
+        "Bittersweet Symphony",
+        "Mad World"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "boolean",
+      "difficulty": "medium",
+      "question": "The Sonoran Desert is located in eastern Africa.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "The starting pistol of the Terrorist team in a competitive match of Counter Strike: Global Offensive is what?",
+      "correct_answer": "Glock-18",
+      "incorrect_answers": [
+        "Tec-9",
+        "Desert Eagle",
+        "Dual Berretas"
+      ]
+    },
+    {
+      "category": "Science: Computers",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "DHCP stands for Dynamic Host Configuration Port.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "When was Final Fantasy XV released?",
+      "correct_answer": "November 29th, 2016",
+      "incorrect_answers": [
+        "October 25th, 2016",
+        "December 31th, 2016",
+        "November 30th, 2016"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "boolean",
+      "difficulty": "easy",
+      "question": "The Lego Group was founded in 1932.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "boolean",
+      "difficulty": "easy",
+      "question": "The song 'Stronger Than You' is a single by Estelle, who played Garnet in Steven Universe.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the movie 'Spaceballs', what are the Spaceballs attempting to steal from Planet Druidia?",
+      "correct_answer": "Air",
+      "incorrect_answers": [
+        "The Schwartz",
+        "Princess Lonestar",
+        "Meatballs"
+      ]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "When did Norway get its constitution?",
+      "correct_answer": "1814",
+      "incorrect_answers": [
+        "1932",
+        "1905",
+        "1854"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the real name of the famous spanish humorist, El Risitas?",
+      "correct_answer": "Juan Joya Borga",
+      "incorrect_answers": [
+        "Gabriel Garcia Marquez",
+        "Jesus Quintero",
+        "Ernesto Guevara"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "The voice actor for which Portal 2 character was not a TV or film actor prior to the game?",
+      "correct_answer": "GLaDOS",
+      "incorrect_answers": [
+        "Cave Johnson",
+        "Wheatley",
+        "Atlas / P-Body"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In 'Mario &amp; Sonic at the Olympic Games', characters are split into how many types?",
+      "correct_answer": "4",
+      "incorrect_answers": [
+        "6",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What minimum level in the Defence skill is needed to equip Dragon Armour in the MMO RuneScape?",
+      "correct_answer": "60",
+      "incorrect_answers": [
+        "65",
+        "55",
+        "70"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the first Studio Album to be released on the Internet with a 'Pay-What-You-Want' price?",
+      "correct_answer": "In Rainbows",
+      "incorrect_answers": [
+        "The Help Album",
+        "Skrillex and Diplo Present Jack &Uuml;",
+        "Blackstar"
+      ]
+    },
+    {
+      "category": "History",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "The USS Missouri (BB-63) last served in the Korean War.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "Vehicles",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "The LS3 engine is how many cubic inches?",
+      "correct_answer": "376",
+      "incorrect_answers": [
+        "346",
+        "364",
+        "427"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which of the following is not a character in the Street Fighter series?",
+      "correct_answer": "Mai Shiranui",
+      "incorrect_answers": [
+        "Laura Matsuda",
+        "Sakura Kasugano",
+        "Ibuki"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In 'Rick and Morty', from which dimension do Rick and Morty originate from?",
+      "correct_answer": "C-137",
+      "incorrect_answers": [
+        "J1977",
+        "C-136",
+        "C500-a"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who was the lead singer and frontman of rock band R.E.M?",
+      "correct_answer": "Michael Stipe",
+      "incorrect_answers": [
+        "Chris Martin",
+        "Thom Yorke",
+        "George Michael"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who developed the 2016 farming RPG 'Stardew Valley'?",
+      "correct_answer": "Eric Barone",
+      "incorrect_answers": [
+        "Daisuke Amaya",
+        "Jasper Byrne",
+        "Lucas Pope"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the main island in PLAYERUNKNOWN'S BATTLEGROUNDS?",
+      "correct_answer": "Erangel",
+      "incorrect_answers": [
+        "Marmara",
+        "Severny",
+        "Lastovo"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which Batman sidekick is the son of Talia al Ghul?",
+      "correct_answer": "Damian Wayne",
+      "incorrect_answers": [
+        "Dick Grayson",
+        "Tim Drake",
+        "Jason Todd"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which town is the setting for the Disney movie The Love Bug (1968)?",
+      "correct_answer": "San Francisco",
+      "incorrect_answers": [
+        "Los Angeles",
+        "Sacramento",
+        "San Jose"
+      ]
+    },
+    {
+      "category": "Science & Nature",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Coulrophobia is the irrational fear of what?",
+      "correct_answer": "Clowns",
+      "incorrect_answers": [
+        "Cemeteries",
+        "Needles",
+        "Tunnels"
+      ]
+    }
+  ]
+}

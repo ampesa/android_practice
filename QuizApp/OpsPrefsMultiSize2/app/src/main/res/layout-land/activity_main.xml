@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_user_pass"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_appicon"
+            android:src="@mipmap/icon_myapp_001"
+            android:layout_toLeftOf="@id/tv_main"
+            android:layout_alignBaseline="@id/tv_main"
+            android:baselineAlignBottom="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_main"
+            android:text="@string/tv_main"
+            android:layout_centerHorizontal="true"
+            android:textSize="60sp"
+            android:fontFamily="@font/journal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:paddingHorizontal="5dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_email"
+            android:hint="@string/et_email_hint"
+            android:layout_below="@id/tv_main"
+            style="@style/login_editText"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_pass"
+            android:hint="@string/et_pass_hint"
+            android:layout_below="@+id/et_email"
+            style="@style/login_editText"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_login_buttons"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/bt_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_email_login"
+            android:layout_above="@id/bt_facebook_login"
+            android:drawableLeft="@mipmap/icon_login_email"
+            android:drawableTint="@android:color/darker_gray"
+            style="@style/login_button"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_facebook_login"
+            android:text="@string/bt_facebook_login"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@mipmap/icon_login_facebook"
+            style="@style/login_button"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_google_login"
+            android:text="@string/bt_google_login"
+            android:layout_below="@id/bt_facebook_login"
+            android:drawableLeft="@mipmap/icon_login_google"
+            style="@style/login_button"/>
+    </RelativeLayout>
+
+</LinearLayout>

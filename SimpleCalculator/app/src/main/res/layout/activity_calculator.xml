@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="70sp"
+        android:background="@color/colorWhite"
+        android:padding="10dp"
+        android:id="@+id/tv_calculator_display"
+        />
+
+    <LinearLayout
+        style="@style/controlRow">
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="1"
+            android:id="@+id/bt_key_one"/>
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="2"
+            android:id="@+id/bt_key_two"/>
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="3"
+            android:id="@+id/bt_key_three"/>
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="+"
+            android:id="@+id/bt_key_plus"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/controlRow">
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="4"
+            android:id="@+id/bt_key_four"/>
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="5"
+            android:id="@+id/bt_key_five"/>
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="6"
+            android:id="@+id/bt_key_six"/>
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="-"
+            android:id="@+id/bt_key_minus"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/controlRow">
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="7"
+            android:id="@+id/bt_key_seven"/>
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="8"
+            android:id="@+id/bt_key_eight"/>
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="9"
+            android:id="@+id/bt_key_nine"/>
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="x"
+            android:id="@+id/bt_key_multiply"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/controlRow">
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="0"
+            android:id="@+id/bt_key_zero"/>
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="%"
+            android:id="@+id/bt_key_divide"/>
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="="
+            android:id="@+id/bt_key_equal"/>
+        <Button
+            style="@style/calculatorButtonStyle"
+            android:text="C"
+            android:id="@+id/bt_key_clear"/>
+    </LinearLayout>
+
+
+</LinearLayout>
