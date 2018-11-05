@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">QuickTrade</string>
+    <string name="et_login_email">Email</string>
+    <string name="et_login_pass">Password</string>
+    <string name="button_sign_in">Sign In</string>
+    <string name="tv_login_forgotten">Forgotten Password</string>
+    <string name="tv_login_sign_up">Sign Up</string>
+    <string name="tv_signup_access">Your access data</string>
+    <string name="tv_signup_personal">Your personal data</string>
+    <string name="et_signup_name">Name</string>
+    <string name="et_signup_family">Family Name</string>
+    <string name="signup_country">Country</string>
+    <string name="et_signup_zip">Zip Code</string>
+    <string name="bt_signup">Sign Up</string>
+    <string name="tv_profile_email">Email: </string>
+    <string name="tv_profile_pass">Password: </string>
+    <string name="tv_profile_name">Name: </string>
+    <string name="tv_profile_family">Family Name: </string>
+    <string name="tv_profile_country">Country: </string>
+    <string name="tv_profile_zip">Zip Code: </string>
+    <string name="bt_profile_edit">Edit</string>
+    <string name="tv_profile_products">Your products</string>
+    <string name="tv_product_description">Description</string>
+    <string name="tv_product_price">Price</string>
+    <string name="tv_product_location">Location</string>
+    <string name="bt_product_buy">Buy</string>
+    <string name="bt_product_edit">Edit</string>
+    <string name="tv_main_search_category">Search by category</string>
+    <string name="tv_main_latest">Latest products</string>
+    <string name="tv_main_near">Near to You</string>
+    <string name="bt_main_upload">Upload</string>
+
+</resources>

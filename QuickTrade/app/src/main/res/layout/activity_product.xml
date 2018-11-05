@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_product">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/iv_product_image"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_default_image_001"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_product_description_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_product_description"
+            android:layout_below="@+id/iv_product_image"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/tv_product_description_label"
+            android:layout_marginStart="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_product_price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_product_price"
+            android:layout_below="@+id/tv_product_description"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/tv_product_price_label"
+            android:layout_marginStart="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_product_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_product_location"
+            android:layout_below="@+id/tv_product_price"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_product_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/tv_product_location"
+            android:layout_marginStart="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_product_zip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/tv_product_country"
+            android:layout_marginStart="40dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_product_edit"
+            android:layout_below="@+id/iv_product_image"
+            android:text="@string/bt_product_edit"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginTop="140dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_product_buy"
+            android:layout_below="@+id/iv_product_image"
+            android:text="@string/bt_product_buy"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginTop="140dp"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+</ScrollView>
