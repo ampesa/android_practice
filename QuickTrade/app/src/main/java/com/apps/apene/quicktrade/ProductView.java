@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Product extends AppCompatActivity {
+public class ProductView extends AppCompatActivity {
 
     protected ImageView mProductImage = null;
     protected TextView mProductDescription = null;

@@ -29,5 +29,18 @@
     <string name="tv_main_latest">Latest products</string>
     <string name="tv_main_near">Near to You</string>
     <string name="bt_main_upload">Upload</string>
+    <string name="pref_cat_start_title">Start settings</string>
+    <string name="pref_list_show_title">Start Screen products</string>
+    <string name="pref_list_show_summary">Select what products we must show you in Start Screen</string>
+    <string name="pref_cat_search_title">Search settings</string>
+    <string name="pref_list_search_title">Search Order</string>
+    <string name="pref_list_search_summary">Select which order do you want us to show you the search results</string>
+    <string name="pref_switch_everywhere_title">Show products from everywhere</string>
+    <string name="pref_switch_everywhere_summary">Switch off if you only want to see products from your country</string>
+    <string name="pref_checkbox_photo">Only show products with photo</string>
+    <string name="menu_profile_title">Profile</string>
+    <string name="menu_settings_title">Settings</string>
+    <string name="menu_search_title">Search</string>
+    <string name="menu_logout_title">Logout</string>
 
 </resources>

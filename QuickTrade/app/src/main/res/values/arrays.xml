@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="show_list">
+        <item>Recent</item>
+        <item>Near</item>
+    </string-array>
+
+    <string-array name="show_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="search_list">
+        <item>Recent First</item>
+        <item>Cheaper First</item>
+    </string-array>
+
+    <string-array name="search_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>
