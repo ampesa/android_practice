@@ -14,7 +14,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="10dp"
-        android:textSize="18sp"/>
+        android:textSize="22sp"/>
 
     <TextView
         android:id="@+id/tv_profile_email_label"
@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_profile_email"
         android:layout_below="@+id/tv_profile_access"
-        android:layout_marginStart="40dp"/>
+        android:layout_marginStart="40dp"
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/tv_profile_email"
@@ -30,7 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_profile_access"
         android:layout_toEndOf="@id/tv_profile_email_label"
-        android:layout_marginStart="10dp"/>
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/tv_profile_pass_label"
@@ -38,15 +40,18 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_profile_pass"
         android:layout_below="@id/tv_profile_email_label"
-        android:layout_marginStart="40dp"/>
+        android:layout_marginStart="40dp"
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/tv_profile_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:layout_below="@id/tv_profile_email_label"
         android:layout_toEndOf="@id/tv_profile_pass_label"
-        android:layout_marginStart="10dp"/>
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,7 +62,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="10dp"
-        android:textSize="18sp"/>
+        android:textSize="22sp"/>
 
     <TextView
         android:id="@+id/tv_profile_name_label"
@@ -65,15 +70,20 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_profile_name"
         android:layout_below="@+id/tv_profile_personal"
-        android:layout_marginStart="40dp"/>
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
 
-    <TextView
+    <EditText
         android:id="@+id/tv_profile_name"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_profile_personal"
         android:layout_toEndOf="@id/tv_profile_name_label"
-        android:layout_marginStart="10dp"/>
+        android:layout_alignBaseline="@+id/tv_profile_name_label"
+        android:enabled="false"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/tv_profile_family_label"
@@ -81,30 +91,41 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_profile_family"
         android:layout_below="@id/tv_profile_name_label"
-        android:layout_marginStart="40dp"/>
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
 
-    <TextView
+    <EditText
         android:id="@+id/tv_profile_family"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_profile_name_label"
         android:layout_toEndOf="@id/tv_profile_family_label"
-        android:layout_marginStart="10dp"/>
+        android:layout_alignBaseline="@id/tv_profile_family_label"
+        android:enabled="false"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"/>
+
     <TextView
         android:id="@+id/tv_profile_country_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tv_profile_country"
         android:layout_below="@+id/tv_profile_family_label"
-        android:layout_marginStart="40dp"/>
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
 
-    <TextView
+    <EditText
         android:id="@+id/tv_profile_country"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_profile_family_label"
         android:layout_toEndOf="@id/tv_profile_country_label"
-        android:layout_marginStart="10dp"/>
+        android:layout_alignBaseline="@id/tv_profile_country_label"
+        android:enabled="false"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/tv_profile_zip_label"
@@ -112,15 +133,23 @@
         android:layout_height="wrap_content"
         android:text="@string/tv_profile_zip"
         android:layout_below="@id/tv_profile_country_label"
-        android:layout_marginStart="40dp"/>
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
 
-    <TextView
+    <EditText
         android:id="@+id/tv_profile_zip"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_profile_country_label"
         android:layout_toEndOf="@id/tv_profile_zip_label"
-        android:layout_marginStart="10dp"/>
+        android:layout_alignBaseline="@id/tv_profile_zip_label"
+        android:enabled="false"
+        android:inputType="number"
+        android:maxLength="5"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="40dp"
+        android:textSize="18sp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -131,7 +160,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="10dp"
-        android:textSize="18sp"/>
+        android:textSize="22sp"/>
 
     <Button
         android:layout_width="match_parent"
@@ -143,6 +172,6 @@
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="70dp"
-        android:layout_marginTop="140dp"/>
+        android:layout_marginTop="60dp"/>
 
 </RelativeLayout>

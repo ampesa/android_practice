@@ -29,6 +29,7 @@
         android:id="@+id/et_login_email"
         android:layout_below="@+id/iv_login_logo"
         android:hint="@string/et_login_email"
+        android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="70dp"/>
@@ -39,6 +40,7 @@
         android:id="@+id/et_login_pass"
         android:layout_below="@+id/et_login_email"
         android:hint="@string/et_login_pass"
+        android:inputType="textPassword"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="70dp"/>

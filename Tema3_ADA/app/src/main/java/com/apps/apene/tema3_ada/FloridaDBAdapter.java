@@ -172,6 +172,16 @@ public class FloridaDBAdapter {
     }
 
     public ArrayList<String> getAll(){
+        /* ArrayList<String> all = new ArrayList<>();
+           ArrayList<String> students = db.getStudents();
+           ArrayList<String> lecturers = db.getLecturers();
+
+           all.addAll(students);
+           all.adAll(lecturers);
+
+           return all;
+        * */
+
         ArrayList<String> all = new ArrayList<String>();
         //Recuperamos en un cursor la consulta realizada
         String query = "SELECT DISTINCT * FROM " + TABLE_STUDENTS + " JOIN " + TABLE_LECTURERS + ";";

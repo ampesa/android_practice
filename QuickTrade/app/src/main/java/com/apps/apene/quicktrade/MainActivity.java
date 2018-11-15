@@ -8,30 +8,52 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
+
+import com.apps.apene.quicktrade.model.ProductSearch;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Elementos gráficos
     protected ImageView mCategoryMotor = null;
     protected ImageView mCategoryHome = null;
     protected ImageView mCategoryTech = null;
     protected Button mButtonUpload = null;
+    protected FirebaseAuth mAuth = null;
+    protected String sCurrentUID = null;
+    protected ProductSearch mSearch = null;
+    protected String attribute = null;
+    protected String value = null;
 
+    // Recuerda conectar con la API REST de la moneda para actualizar el tipo de cambio al iniciar
+    // esta actividad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        // Mostramos la barra de acción superior
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        // Referencias
         mCategoryMotor = findViewById(R.id.iv_category_motor);
         mCategoryHome = findViewById(R.id.iv_category_home);
         mCategoryTech = findViewById(R.id.iv_category_tech);
         mButtonUpload = findViewById(R.id.bt_main_upload);
+        mAuth = FirebaseAuth.getInstance();
+        sCurrentUID = mAuth.getCurrentUser().getUid();
+        mSearch = new ProductSearch();
+
 
         mCategoryMotor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                value = "Vehicles";
+                attribute = "category";
+                Intent result = new Intent(MainActivity.this, ResultsView.class);
+                result.putExtra("attribute", attribute);
+                result.putExtra("value", value);
+                startActivity(result);
             }
         });
 
@@ -52,7 +74,9 @@ public class MainActivity extends AppCompatActivity {
         mButtonUpload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent goToAddProduct = new Intent(getApplicationContext(), AddProduct.class);
+                startActivity(goToAddProduct);
+                //Toast.makeText(getApplicationContext(), sCurrentUID, Toast.LENGTH_LONG).show();
             }
         });
     }
